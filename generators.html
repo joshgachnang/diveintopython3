@@ -95,13 +95,14 @@ def plural(noun):
 &lt;_sre.SRE_Match object at 0x001C1FA8>
 <a><samp class=p>>>> </samp><kbd class=pp>re.search('[^aeiou]y$', 'boy')</kbd>      <span class=u>&#x2461;</span></a>
 <samp class=p>>>> </samp>
-<samp class=p>>>> </samp><kbd class=pp>re.search('[^aeiou]y$', 'day')</kbd>
+<a><samp class=p>>>> </samp><kbd class=pp>re.search('[^aeiou]y$', 'day')</kbd>      <span class=u>&#x2462;</span></a>
 <samp class=p>>>> </samp>
-<a><samp class=p>>>> </samp><kbd class=pp>re.search('[^aeiou]y$', 'pita')</kbd>     <span class=u>&#x2462;</span></a>
+<a><samp class=p>>>> </samp><kbd class=pp>re.search('[^aeiou]y$', 'pita')</kbd>     <span class=u>&#x2463;</span></a>
 <samp class=p>>>> </samp></pre>
 <ol>
 <li><code>vacancy</code> matches this regular expression, because it ends in <code>cy</code>, and <code>c</code> is not <code>a</code>, <code>e</code>, <code>i</code>, <code>o</code>, or <code>u</code>.
-<li><code>boy</code> does not match, because it ends in <code>oy</code>, and you specifically said that the character before the <code>y</code> could not be <code>o</code>. <code>day</code> does not match, because it ends in <code>ay</code>.
+<li><code>boy</code> does not match, because it ends in <code>oy</code>, and you specifically said that the character before the <code>y</code> could not be <code>o</code>. 
+<li><code>day</code> does not match, because it ends in <code>ay</code>.
 <li><code>pita</code> does not match, because it does not end in <code>y</code>.
 </ol>
 <pre class=screen>
